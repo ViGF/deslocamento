@@ -54,6 +54,7 @@ export default function Clients() {
 
   const invalidateQuery = async () => {
     await queryClient.invalidateQueries(['client'])
+    dehydrate(queryClient)
   }
 
   return (
