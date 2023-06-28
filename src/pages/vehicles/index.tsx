@@ -89,7 +89,7 @@ export default function Vehicles() {
   )
 }
 
-export async function getStaticProps() {
+export async function getInitialProps() {
   const queryClient = new QueryClient()
 
   await queryClient.prefetchQuery(['vehicles'], async () => {

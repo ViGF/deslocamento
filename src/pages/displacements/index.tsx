@@ -97,7 +97,7 @@ export default function Displacements() {
   )
 }
 
-export async function getStaticProps() {
+export async function getInitialProps() {
   const queryClient = new QueryClient()
 
   await queryClient.prefetchQuery(['displacements'], async () => {

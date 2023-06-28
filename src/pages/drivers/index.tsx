@@ -111,7 +111,7 @@ export default function Drivers() {
   )
 }
 
-export async function getStaticProps() {
+export async function getInitialProps() {
   const queryClient = new QueryClient()
 
   await queryClient.prefetchQuery(['drivers'], async () => {
